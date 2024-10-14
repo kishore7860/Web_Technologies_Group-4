@@ -1,0 +1,73 @@
+/* General container styling */
+.literature-review {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Card styling */
+.card {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-title {
+    padding: 15px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title:hover {
+    background-color: #45a049;
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+.toggle-icon {
+    font-size: 1.5rem;
+}
+
+/* Content inside the card */
+.card-content {
+    padding: 15px;
+    color: #555;
+}
+
+.card-content p {
+    margin-bottom: 15px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .literature-review {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-content {
+        font-size: 0.9rem;
+    }
+
+    .toggle-icon {
+        font-size: 1.2rem;
+    }
+}

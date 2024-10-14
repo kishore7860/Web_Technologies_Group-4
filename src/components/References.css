@@ -1,0 +1,66 @@
+/* General styling for the references page */
+.references {
+    background-color: #f4f7f9;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.references h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.references .description {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reference-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.reference-list li {
+    margin-bottom: 15px;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.reference-list a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.reference-list a:hover {
+    color: #0045cc;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .references {
+        padding: 20px;
+    }
+
+    .references h1 {
+        font-size: 28px;
+    }
+
+    .references .description {
+        font-size: 16px;
+    }
+
+    .reference-list li {
+        font-size: 16px;
+    }
+}

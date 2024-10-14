@@ -1,0 +1,99 @@
+/* General Styles */
+.about-container {
+    padding: 20px;
+    max-width: 900px;
+    /* Make the width smaller like the literature review */
+    margin: 0 auto;
+    /* Center the container */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.about-header {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.subheader {
+    font-size: 1.8em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.project-details {
+    font-size: 1.1em;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+}
+
+.link-list li {
+    margin: 10px 0;
+}
+
+.link-list a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.link-list a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 10px;
+    }
+
+    .about-header {
+        font-size: 2em;
+    }
+
+    .about-description,
+    .project-details {
+        font-size: 1em;
+    }
+
+    .subheader {
+        font-size: 1.5em;
+        justify-content: center;
+    }
+
+    .link-list a {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-header {
+        font-size: 1.5em;
+    }
+
+    .about-description {
+        font-size: 0.9em;
+    }
+
+    .subheader {
+        font-size: 1.3em;
+    }
+
+    .link-list a {
+        font-size: 0.9em;
+    }
+}
