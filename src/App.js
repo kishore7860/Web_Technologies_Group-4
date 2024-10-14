@@ -63,7 +63,7 @@ function App() {
         <section id="literature">
           <LiteratureReview />
         </section>
-        <section id="taxonomy">
+        <section id="toxonomy">
           <Taxonomy />
         </section>
         <section id="challenges">
