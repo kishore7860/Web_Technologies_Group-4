@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import About from './components/About';
 import LiteratureReview from './components/LiteratureReview';
-import Taxonomy from './components/Toxonomy';
+import Taxonomy from './components/Taxonomy';
 import Challenges from './components/Challenges';
 import Members from './components/Members';
 import References from './components/References';
@@ -41,7 +41,7 @@ function App() {
             <button onClick={() => scrollToSection('literature')}>Literature Review</button>
           </li>
           <li>
-            <button onClick={() => scrollToSection('toxonomy')}>Toxonomy</button>
+            <button onClick={() => scrollToSection('taxonomy')}>Taxonomy</button>
           </li>
           <li>
             <button onClick={() => scrollToSection('challenges')}>Challenges & Open Issues</button>
@@ -63,7 +63,7 @@ function App() {
         <section id="literature">
           <LiteratureReview />
         </section>
-        <section id="toxonomy">
+        <section id="taxonomy">
           <Taxonomy />
         </section>
         <section id="challenges">

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Toxonomy.css'; // Assuming you're going to create this CSS file
+import './Taxonomy.css'; // Assuming you're going to create this CSS file
 
 const Taxonomy = () => {
   return (
