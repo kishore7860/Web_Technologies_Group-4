@@ -8,7 +8,7 @@ import References from './components/References';
 import './App.css';
 
 function App() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State for toggling menu
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -19,7 +19,7 @@ function App() {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-    setIsMenuOpen(false); // Close menu after scrolling
+    setIsMenuOpen(false);
   };
 
   return (
@@ -41,7 +41,7 @@ function App() {
             <button onClick={() => scrollToSection('literature')}>Literature Review</button>
           </li>
           <li>
-            <button onClick={() => scrollToSection('toxonomy')}>Toxonomy</button>
+            <button onClick={() => scrollToSection('toxonomy')}>Taxonomy</button>
           </li>
           <li>
             <button onClick={() => scrollToSection('challenges')}>Challenges & Open Issues</button>
@@ -54,6 +54,11 @@ function App() {
           </li>
         </ul>
       </nav>
+
+      {/* Title Section Below the Tabs */}
+      <section className="title-section">
+        <h2>DNS Over HTTPS Survey</h2>
+      </section>
 
       {/* Content Sections */}
       <div className="content">
