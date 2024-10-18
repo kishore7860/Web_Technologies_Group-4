@@ -19,6 +19,7 @@ function App() {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+    // Close the menu after selecting an option
     setIsMenuOpen(false);
   };
 
@@ -55,10 +56,6 @@ function App() {
         </ul>
       </nav>
 
-      {/* Title Section Below the Tabs */}
-      <section className="title-section">
-        <h2>DNS Over HTTPS Survey</h2>
-      </section>
 
       {/* Content Sections */}
       <div className="content">
