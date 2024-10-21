@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';  // Use HashRouter instead
 import About from './components/About';
 import LiteratureReview from './components/LiteratureReview';
 import Taxonomy from './components/Taxonomy';
@@ -8,9 +8,8 @@ import References from './components/References';
 import './App.css';
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false); // State to control mobile menu
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  // Toggle the mobile menu
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -22,14 +21,12 @@ function App() {
           <div className="nav-container">
             <Link className="navbar-brand" to="/">DNS over HTTPS Survey</Link>
 
-            {/* Hamburger icon for mobile */}
             <div className={`hamburger-icon ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
               <div className="bar"></div>
               <div className="bar"></div>
               <div className="bar"></div>
             </div>
 
-            {/* Navbar links, toggling visibility based on menuOpen */}
             <ul className={`navbar-nav ${menuOpen ? 'open' : ''}`}>
               <li><Link className="nav-link" to="/" onClick={toggleMenu}>About</Link></li>
               <li><Link className="nav-link" to="/literature" onClick={toggleMenu}>Literature Review</Link></li>
@@ -40,7 +37,6 @@ function App() {
           </div>
         </header>
 
-        {/* Content for the app */}
         <div className="content">
           <Routes>
             <Route path="/" element={<About />} />
