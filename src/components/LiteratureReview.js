@@ -48,181 +48,159 @@ const literatureData = [
   },
 
   {
-    id: 'paper3',
-    title: 'Paper 3: Decentralized DNS over HTTPS: Challenges and Opportunities',
+    id: "paper3",
+    title: 'Paper 3: Verification Method of Associated Domain Names Using Certificates by Applying DNS over TLS to Authoritative Servers',
     content: [
       {
         sectionTitle: 'Problem Definition',
-        text: "Centralized DNS over HTTPS (DoH) services face potential risks like a single point of failure, which could expose users to privacy risks or attacks targeting centralized DoH resolvers."
+        text: "The paper explores the challenge of ensuring authenticity and integrity of domain names in DNS-over-TLS (DoT) and DNS-over-HTTPS (DoH) systems."
       },
       {
         sectionTitle: 'Solution Approach',
-        text: "The paper discusses decentralizing DoH by distributing DNS resolution across multiple servers. This would enhance security, improve reliability, and reduce dependence on a single entity."
+        text: "It proposes a solution to improve domain name verification by integrating DNS-over-TLS with authoritative servers. The method includes using certificates to verify domain names."
       },
       {
         sectionTitle: 'Methodology',
-        text: "The study explores decentralized DoH infrastructure by analyzing current approaches and the benefits they offer. It looks at security improvements and challenges in deploying a decentralized DNS system."
+        text: "The paper outlines a verification method based on DNS-over-TLS combined with certificates, ensuring secure and encrypted DNS responses."
       },
       {
         sectionTitle: 'Conclusion',
-        text: "A decentralized DNS over HTTPS could improve privacy and reliability, but it introduces implementation challenges. The paper advocates for further research on scalable and secure decentralization strategies."
+        text: "The integration of DNS-over-TLS with certificates provides stronger security for DNS resolution, protecting against spoofing and other attacks."
       }
     ]
   },
   {
     id: 'paper4',
-    title: 'Paper 4: Evaluating DoH Performance on Mobile Networks',
+    title: 'Paper 4:Man-in-the-Middle Attack to the HTTPS Protocol',
     content: [
       {
         sectionTitle: 'Problem Definition',
-        text: "Mobile networks, with their limited bandwidth and higher latency, are particularly sensitive to performance optimizations. DoH may increase DNS resolution times on mobile devices, affecting user experience."
+        text: "Despite HTTPS encryption, attackers can still exploit vulnerabilities, such as Man-in-the-Middle (MitM) attacks."
       },
       {
         sectionTitle: 'Solution Approach',
-        text: "The study investigates DoH performance on mobile networks, focusing on latency, bandwidth usage, and battery consumption. It compares DoH performance to traditional DNS in mobile environments."
+        text: "This paper explores methods to prevent MitM attacks on HTTPS, such as enhanced encryption techniques and better server authentication."
       },
       {
         sectionTitle: 'Methodology',
-        text: "Through controlled experiments, the paper evaluates DoH latency and performance on various mobile devices and network conditions. It also measures the impact of DoH on mobile network resources."
+        text: "The paper simulates MitM attacks in HTTPS environments and examines scenarios where certificate weaknesses are exploited."
       },
       {
         sectionTitle: 'Conclusion',
-        text: "DoH introduces performance overhead on mobile networks but offers improvements in privacy. The study suggests that mobile-specific optimizations are necessary to balance performance and privacy."
+        text: "Stronger certificate validation and DNS-over-HTTPS adoption are key to protecting against MitM attacks."
       }
     ]
   },
   {
-    id: 'paper5',
-    title: 'Paper 5: DNS over HTTPS and Its Impact on Internet Censorship',
-    content: [
-      {
-        sectionTitle: 'Problem Definition',
-        text: "In regions with restricted access to certain domains, DNS censorship can prevent users from accessing desired content. Traditional DNS can be easily manipulated to block access to these domains."
-      },
-      {
-        sectionTitle: 'Solution Approach',
-        text: "The paper explores how DNS over HTTPS (DoH) can bypass DNS-based censorship by encrypting DNS queries, thus preventing ISPs and other entities from intercepting and blocking DNS requests."
-      },
-      {
-        sectionTitle: 'Methodology',
-        text: "The authors examine the effectiveness of DoH in bypassing censorship by conducting case studies in countries with high censorship levels. They analyze the success rate of DoH in accessing blocked content."
-      },
-      {
-        sectionTitle: 'Conclusion',
-        text: "DoH can bypass DNS censorship, but the implementation may be blocked by governments or censorship systems. The paper recommends further research on circumventing such censorship mechanisms while ensuring privacy."
-      }
-    ]
-  },
-  {
-    id: 'paper6',
-    title: 'Paper 6: DoH Adoption and Its Role in Privacy Laws',
-    content: [
-      {
-        sectionTitle: 'Problem Definition',
-        text: "The adoption of DNS over HTTPS (DoH) raises legal questions around data protection and privacy, particularly in regions governed by privacy laws like the GDPR and CCPA."
-      },
-      {
-        sectionTitle: 'Solution Approach',
-        text: "This paper examines the intersection of DoH adoption and privacy laws, focusing on how DoH complies with regulations such as the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA)."
-      },
-      {
-        sectionTitle: 'Methodology',
-        text: "The study surveys DoH adoption practices and evaluates their compatibility with privacy laws. It includes an analysis of how DoH service providers handle user data and whether their practices align with regulatory requirements."
-      },
-      {
-        sectionTitle: 'Conclusion',
-        text: "DoH offers significant privacy benefits, but its adoption raises concerns about compliance with privacy laws. The paper calls for standardized guidelines to ensure that DoH providers meet legal privacy requirements."
-      }
-    ]
-  },
-  {
-    id: 'paper6',
-    title: 'Paper 6: An Analysis of DNS over HTTPS Traffic in Different Network Environments',
-    content: [
-      {
-        sectionTitle: 'Problem Definition',
-        text: "The behavior of DoH under various network conditions is not well understood."
-      },
-      {
-        sectionTitle: 'Solution Approach',
-        text: "This paper analyzes DoH performance in different environments, including mobile, residential, and corporate networks."
-      },
-      {
-        sectionTitle: 'Methodology',
-        text: "Experimental analysis involving the collection of real-world network traces and simulations of different network topologies."
-      },
-      {
-        sectionTitle: 'Conclusion',
-        text: "DoH can perform well in diverse network environments, but its performance varies significantly based on network conditions."
-      }
-    ]
-  },
-  {
-    id: 'paper7',
-    title: 'Paper 7: DNS over HTTPS: Privacy versus Performance',
-    content: [
-      {
-        sectionTitle: 'Problem Definition',
-        text: "There is a trade-off between privacy and performance when implementing DoH."
-      },
-      {
-        sectionTitle: 'Solution Approach',
-        text: "The paper explores the trade-off between the security enhancements of DoH and its impact on performance."
-      },
-      {
-        sectionTitle: 'Methodology',
-        text: "Comparative benchmarks of DoH with traditional DNS and DNS over TLS, including latency and throughput measurements."
-      },
-      {
-        sectionTitle: 'Conclusion',
-        text: "While DoH offers strong privacy improvements, it comes at the cost of performance degradation."
-      }
-    ]
-  },
-  {
-    id: 'paper8',
-    title: 'Paper 8: Towards Decentralized DNS over HTTPS',
-    content: [
-      {
-        sectionTitle: 'Problem Definition',
-        text: "Centralized DoH resolvers could lead to privacy concerns as a few entities control DNS traffic."
-      },
-      {
-        sectionTitle: 'Solution Approach',
-        text: "Proposes the implementation of decentralized DoH infrastructure to distribute DNS resolution."
-      },
-      {
-        sectionTitle: 'Methodology',
-        text: "A simulation study comparing decentralized versus centralized DoH architecture with respect to performance and privacy."
-      },
-      {
-        sectionTitle: 'Conclusion',
-        text: "Decentralization can mitigate privacy risks associated with centralized DoH providers, but it poses challenges related to scalability."
-      }
-    ]
-  },
-  {
-    id: 'paper9',
-    title: 'Paper 9: DNS over HTTPS: Assessing Privacy Implications',
-    content: [
-      {
-        sectionTitle: 'Problem Definition',
-        text: "Despite the encryption, DoH may still allow DNS providers to track user activities."
-      },
-      {
-        sectionTitle: 'Solution Approach',
-        text: "The paper discusses the privacy implications of DoH, focusing on DNS provider logging and potential data leakage."
-      },
-      {
-        sectionTitle: 'Methodology',
-        text: "Privacy analysis of DNS provider logs and comparison of the privacy practices of different DoH providers."
-      },
-      {
-        sectionTitle: 'Conclusion',
-        text: "DoH improves user privacy but requires better provider transparency and logging policies to fully protect users."
-      }
-    ]
-  },
+  id: 'paper5',
+  title: 'Paper 5: Measuring DNS-over-HTTPS Performance Around the World',
+  content: [
+    {
+      sectionTitle: 'Problem Definition',
+      text: "The performance of DNS-over-HTTPS (DoH) is crucial to understanding its global impact. Different regions exhibit varying performance levels due to infrastructure, network conditions, and server locations."
+    },
+    {
+      sectionTitle: 'Solution Approach',
+      text: "The paper presents a worldwide performance measurement of DoH, analyzing factors such as latency, bandwidth consumption, and reliability across different regions and network environments."
+    },
+    {
+      sectionTitle: 'Methodology',
+      text: "The study uses a large-scale measurement framework that includes both direct and passive measurements from multiple DoH providers and global locations to evaluate the performance variations."
+    },
+    {
+      sectionTitle: 'Conclusion',
+      text: "DNS-over-HTTPS performance varies significantly worldwide, with regions experiencing higher latency and lower reliability. The paper calls for improvements in DoH infrastructure and better global coverage."
+    }
+  ]
+},
+{
+  id: 'paper6',
+  title: 'Paper 6: Privacy of DNS-over-HTTPS: Requiem for a Dream?',
+  content: [
+    {
+      sectionTitle: 'Problem Definition',
+      text: "Although DNS-over-HTTPS (DoH) enhances privacy by encrypting DNS queries, it introduces concerns related to data retention, traffic analysis, and centralization of DNS services."
+    },
+    {
+      sectionTitle: 'Solution Approach',
+      text: "This paper discusses the privacy implications of DoH, highlighting both the benefits and limitations. It examines how DoH impacts the privacy of users compared to traditional DNS."
+    },
+    {
+      sectionTitle: 'Methodology',
+      text: "The paper conducts a detailed analysis of DoH deployments and their privacy effects, with a focus on data collection by DoH resolvers and their compliance with privacy standards."
+    },
+    {
+      sectionTitle: 'Conclusion',
+      text: "DoH significantly improves privacy over traditional DNS, but there are still challenges regarding centralization, data retention, and the ability of third parties to access DNS traffic."
+    }
+  ]
+},
+{
+  id: 'paper7',
+  title: 'Paper 7: Measuring DNS over TLS from the Edge: Adoption, Reliability, and Response Times',
+  content: [
+    {
+      sectionTitle: 'Problem Definition',
+      text: "While DNS over TLS (DoT) provides security benefits similar to DoH, its adoption, reliability, and response times in real-world edge environments remain underexplored."
+    },
+    {
+      sectionTitle: 'Solution Approach',
+      text: "This paper focuses on the adoption of DNS over TLS from edge networks, assessing the reliability of DoT deployments and response times in various real-world network environments."
+    },
+    {
+      sectionTitle: 'Methodology',
+      text: "The paper uses a comprehensive data collection framework to measure DoT adoption rates and analyze performance metrics, including response times and reliability in edge deployments."
+    },
+    {
+      sectionTitle: 'Conclusion',
+      text: "DNS over TLS has shown promising adoption in edge environments, but further improvements are needed to optimize reliability and response times. The paper emphasizes the need for better deployment strategies and infrastructure."
+    }
+  ]
+},
+ {
+  "id": "paper8",
+  "title": "Paper 8: When HTTPS Meets CDN: A Case of Authentication in Delegated Service",
+  "content": [
+    {
+      "sectionTitle": "Problem Definition",
+      "text": "How HTTPS integration with CDN impacts the authentication process in delegated services, specifically when DNS-over-HTTPS is used."
+    },
+    {
+      "sectionTitle": "Solution Approach",
+      "text": "Examines the interaction between CDN infrastructure and HTTPS, particularly in delegated service contexts."
+    },
+    {
+      "sectionTitle": "Methodology",
+      "text": "Case study focusing on CDN and authentication models in HTTPS traffic, with an emphasis on DoH integration."
+    },
+    {
+      "sectionTitle": "Conclusion",
+      "text": "Authentication mechanisms must adapt to DNS-over-HTTPS integration, with a focus on improving performance and security in delegated environments."
+    }
+  ]
+},
+{
+  "id": "paper9",
+  "title": "Paper 9: Summary of DNS over HTTPS Abuse",
+  "content": [
+    {
+      "sectionTitle": "Problem Definition",
+      "text": "DNS-over-HTTPS (DoH) could be abused for evading security filters and causing problems with traffic inspection."
+    },
+    {
+      "sectionTitle": "Solution Approach",
+      "text": "The paper discusses common abuses of DoH and how such abuses can affect network security and performance."
+    },
+    {
+      "sectionTitle": "Methodology",
+      "text": "Analysis of DoH abuse cases and their impact on infrastructure, with a focus on abuse detection and mitigation strategies."
+    },
+    {
+      "sectionTitle": "Conclusion",
+      "text": "DoH abuse presents significant challenges for network security and monitoring systems, which require enhanced detection methods and countermeasures."
+    }
+  ]
+},
   {
     "id": "paper10",
     "title": "Paper 10: A Lightweight Double-Stage Scheme to Identify Malicious DNS over HTTPS Traffic Using a Hybrid Learning Approach",
@@ -291,7 +269,7 @@ const literatureData = [
   },
   {
     "id": "paper13",
-    "title": "Paper 12: Insights into DoH: Traffic Classification for DNS over HTTPS in an Encrypted Network",
+    "title": "Paper 13: Insights into DoH: Traffic Classification for DNS over HTTPS in an Encrypted Network",
     "content": [
       {
         "sectionTitle": "Problem Definition",
@@ -445,94 +423,93 @@ const literatureData = [
     ]
   },
     {
-      "id": "paper20",
-      "title": "Paper 20: DNS over HTTPS for Privacy-Aware Applications",
-      "content": [
-        {
-          "sectionTitle": "Problem Definition",
-          "text": "Privacy-aware applications need to secure DNS queries to prevent tracking."
-        },
-        {
-          "sectionTitle": "Solution Approach",
-          "text": "This paper suggests best practices for integrating DoH into privacy-aware applications."
-        },
-        {
-          "sectionTitle": "Methodology",
-          "text": "Survey of privacy-aware applications and evaluation of their DNS query handling."
-        },
-        {
-          "sectionTitle": "Conclusion",
-          "text": "Implementing DoH in privacy-centric applications can significantly reduce user tracking."
-        }
-      ]
+  "id": "paper20",
+  "title": "Paper 20: Generalized Classification of DNS over HTTPS Traffic with Deep Learning",
+  "content": [
+    {
+      "sectionTitle": "Problem Definition",
+      "text": "Classifying DNS over HTTPS traffic is challenging due to its encrypted nature and the variety of attack vectors."
     },
     {
-      "id": "paper21",
-      "title": "Paper 21: Impact of DNS over HTTPS on Ad-Blocking Technologies",
-      "content": [
-        {
-          "sectionTitle": "Problem Definition",
-          "text": "DoH can interfere with ad-blocking technologies that rely on DNS query filtering."
-        },
-        {
-          "sectionTitle": "Solution Approach",
-          "text": "Investigates how DoH impacts the effectiveness of DNS-based ad-blockers and suggests alternatives."
-        },
-        {
-          "sectionTitle": "Methodology",
-          "text": "Evaluation of DNS-based ad-blockers before and after DoH implementation."
-        },
-        {
-          "sectionTitle": "Conclusion",
-          "text": "While DoH can bypass traditional DNS-based ad-blocking methods, newer techniques can counteract this."
-        }
-      ]
+      "sectionTitle": "Solution Approach",
+      "text": "This paper proposes a deep learning-based model for generalized classification of DoH traffic, improving detection accuracy."
     },
     {
-      "id": "paper22",
-      "title": "Paper 22: DNS over HTTPS: A Performance Evaluation",
-      "content": [
-        {
-          "sectionTitle": "Problem Definition",
-          "text": "DoH can slow down DNS resolution times, affecting user experience."
-        },
-        {
-          "sectionTitle": "Solution Approach",
-          "text": "The paper presents performance metrics for DoH and compares it with traditional DNS."
-        },
-        {
-          "sectionTitle": "Methodology",
-          "text": "Experimental setup to measure the DNS resolution times and overhead introduced by DoH."
-        },
-        {
-          "sectionTitle": "Conclusion",
-          "text": "DoH introduces latency but can be optimized to achieve performance parity with traditional DNS."
-        }
-      ]
+      "sectionTitle": "Methodology",
+      "text": "The paper uses deep learning models such as CNNs for traffic classification, providing a comparison with traditional methods."
     },
     {
-      "id": "paper23",
-      "title": "Paper 23: DoH and the Future of Internet Privacy",
-      "content": [
-        {
-          "sectionTitle": "Problem Definition",
-          "text": "With the rise of surveillance and tracking, the future of internet privacy is uncertain."
-        },
-        {
-          "sectionTitle": "Solution Approach",
-          "text": "Discusses how DoH contributes to improving privacy in a highly monitored internet."
-        },
-        {
-          "sectionTitle": "Methodology",
-          "text": "A study of DoH adoption rates and its impact on internet privacy standards."
-        },
-        {
-          "sectionTitle": "Conclusion",
-          "text": "DoH is an essential tool for improving privacy, but its impact depends on broader adoption and regulatory oversight."
-        }
-      ]
+      "sectionTitle": "Conclusion",
+      "text": "Deep learning offers improved classification performance for DoH traffic, enabling better detection of malicious traffic."
+    }
+  ]
+},
+    {
+  id: 'paper21',
+  title: 'Paper 21: Inline Traffic Analysis Attacks on DNS over HTTPS',
+  content: [
+    {
+      sectionTitle: 'Problem Definition',
+      text: "Inline traffic analysis attacks pose a significant risk to DNS over HTTPS (DoH), where attackers can infer user behavior and potentially compromise privacy despite the encryption."
     },
-
+    {
+      sectionTitle: 'Solution Approach',
+      text: "The paper explores various inline traffic analysis techniques that can be used to break DoH's privacy guarantees, including passive monitoring and traffic pattern analysis."
+    },
+    {
+      sectionTitle: 'Methodology',
+      text: "The study involves simulated environments to analyze the effectiveness of inline traffic analysis techniques, including evaluating the ability to infer DNS queries through packet size, timing, and frequency analysis."
+    },
+    {
+      sectionTitle: 'Conclusion',
+      text: "Despite the encryption provided by DoH, traffic analysis attacks remain a potential threat. The paper suggests that further improvements in traffic obfuscation and additional privacy-preserving measures are necessary to mitigate these risks."
+    }
+  ]
+},
+    {
+  "id": "paper22",
+  "title": "Paper 22: An Explainable AI-Based Intrusion Detection System for DNS Over HTTPS (DoH) Attacks",
+  "content": [
+    {
+      "sectionTitle": "Problem Definition",
+      "text": "DoH attacks pose significant risks to DNS security, and traditional methods struggle to detect them accurately."
+    },
+    {
+      "sectionTitle": "Solution Approach",
+      "text": "The paper presents an AI-based system that uses explainable models to detect DoH attacks with higher accuracy."
+    },
+    {
+      "sectionTitle": "Methodology",
+      "text": "Explainable AI techniques are applied to a dataset of DoH traffic to detect and analyze potential attacks effectively."
+    },
+    {
+      "sectionTitle": "Conclusion",
+      "text": "The proposed explainable AI-based system significantly improves detection accuracy while providing transparency in decision-making."
+    }
+  ]
+},
+    {
+  "id": "paper23",
+  "title": "Paper 23: Classifying DNS over HTTPS Malicious/Benign Traffic Using Deep Learning Models",
+  "content": [
+    {
+      "sectionTitle": "Problem Definition",
+      "text": "The challenge of classifying DNS over HTTPS (DoH) traffic as malicious or benign has become crucial as DoH adoption grows and encrypted traffic increases."
+    },
+    {
+      "sectionTitle": "Solution Approach",
+      "text": "The paper proposes using deep learning models, specifically Convolutional Neural Networks (CNNs), to accurately classify DNS over HTTPS traffic into malicious or benign categories."
+    },
+    {
+      "sectionTitle": "Methodology",
+      "text": "The study involves training deep learning models using labeled DNS over HTTPS traffic data. The performance of CNNs is evaluated against other models, and their accuracy in detecting malicious traffic is compared."
+    },
+    {
+      "sectionTitle": "Conclusion",
+      "text": "Deep learning, particularly CNNs, provides a promising approach to classifying DNS over HTTPS traffic. The method demonstrates high accuracy in distinguishing between benign and malicious traffic, thus helping in real-time threat detection."
+    }
+  ]
+},
     {
   "id": "paper24",
   "title": "Paper 24: Detection of Tunneling in DNS over HTTPS",

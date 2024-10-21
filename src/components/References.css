@@ -1,12 +1,45 @@
 /* General container */
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page styling */
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+/* References container styling */
+.references-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* The references box */
 .references {
+    width: 100%;
+    /* Make sure it's full width of its parent */
+    max-width: 1200px;
+    /* Optional: Set max-width */
     margin: 20px auto;
+    /* Center it with auto margin */
     padding: 20px;
     font-family: 'Arial', sans-serif;
     background-color: #e0f7fa;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    box-sizing: border-box;
+    padding-left: 0;
+    /* Make sure no extra padding is causing the issue */
 }
 
 /* Header styling */

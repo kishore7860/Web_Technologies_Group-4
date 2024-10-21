@@ -5,20 +5,23 @@ body, html {
   font-family: Arial, sans-serif;
 }
 
-.about-container{
-    margin: 20px auto;
-        padding: 20px;
-        font-family: 'Arial', sans-serif;
-        background-color: #e0f7fa;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        width: 100%;
+.about-container {
+  margin: 20px auto;
+  padding: 30px;
+  font-family: 'Arial', sans-serif;
+  background-color: #e0f7fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  width: 90%;
 }
 
+/* App layout */
 .App {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  padding: 0;
 }
 
 /* Header Styling */
@@ -35,8 +38,8 @@ body, html {
   margin: 0;
   font-size: 24px;
   font-weight: bold;
-  color: white; /* Change text color to white */
-  text-align: left; /* Aligns the title to the left */
+  color: white;
+  text-align: left;
 }
 
 /* Hamburger Icon */
@@ -79,7 +82,7 @@ body, html {
 }
 
 .menu-list li {
-  margin: 0 15px;
+  margin: 0 20px; /* Increased margin for better spacing */
 }
 
 .menu-list li button {
@@ -89,6 +92,7 @@ body, html {
   cursor: pointer;
   padding: 10px 15px;
   font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
 .menu-list li button:hover {
@@ -132,4 +136,6 @@ body, html {
   padding: 20px;
   flex-grow: 1;
   background-color: #f0f0f0;
+  margin: 0;
+  overflow: auto; /* Ensures that the content doesn't overflow in smaller screens */
 }
