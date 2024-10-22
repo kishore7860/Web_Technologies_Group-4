@@ -7,10 +7,17 @@ import './Members.css';
 const members = [
   {
     name: 'Nandini Reddy Bhumula',
-    role: 'Content Validator',
+    role: 'Web Developer',
     major: 'Computer Science',
     imageUrl: process.env.PUBLIC_URL + '/images/nandini_profilephoto.jpg',
     githubUrl: 'https://github.com/bhumulanandinireddy',
+  },
+  {
+    name: 'Mohammed Fazil Khasim',
+    role: 'Web Developer',
+    major: 'Computer Science',
+    imageUrl: process.env.PUBLIC_URL + '/images/fazil_pp.jpeg',
+    githubUrl: 'https://github.com/MohammedFazilKhasim',
   },
   {
     name: 'Saiesh Reddy Chittireddy',
@@ -21,18 +28,12 @@ const members = [
   },
   {
     name: 'Joseph Hansen',
-    role: 'Web Developer',
+    role: 'Content Validator',
     major: 'Computer Science',
     imageUrl: process.env.PUBLIC_URL + '/images/josephHansen_pp.png',
     githubUrl: 'https://github.com/truffer11',
   },
-  {
-    name: 'Mohammed Fazil Khasim',
-    role: 'Web Developer',
-    major: 'Computer Science',
-    imageUrl: process.env.PUBLIC_URL + '/images/fazil_pp.jpeg',
-    githubUrl: 'https://github.com/MohammedFazilKhasim',
-  },
+  
   {
     name: 'Kishore Reddy Mamidi',
     role: 'Delivery Lead',
