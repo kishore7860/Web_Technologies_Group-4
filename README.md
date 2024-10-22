@@ -48,7 +48,7 @@ Visit our project website:
 5. Open your browser and visit `http://localhost:3000` to view the project.
 
 ## Technologies Used
-- **Frontend**: React.js, CSS
+- **Frontend**: React.js, CSS, HTML
 - **Version Control**: Git, GitHub
 - **Hosting**: GitHub Pages
 
