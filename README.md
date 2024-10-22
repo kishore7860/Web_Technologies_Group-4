@@ -53,5 +53,6 @@ Visit our project website:
 - **Hosting**: GitHub Pages
 
 ## Contributors
-- **Nandini Reddy** - Website Developer
-- **Kishore Reddy** - Content Validator
+- **Nandini Reddy Bhumula** , **Mohammed Fazil Khasim** - Website Developer
+- **Saiesh Reddy Chittireddy** , **Joseph Hansen** - Content Validator
+- **Kishore Reddy Mamidi** , **Maniteja Vemunoori** - Delivery Lead
